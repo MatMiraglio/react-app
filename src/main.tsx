@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Users from './components/Users.tsx';
+import CreateUser from './components/CreateUser.tsx';
 
 
 const router = createBrowserRouter([
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/create-user',
-    element: <Users />
+    element: <CreateUser />
   }
 ])
 

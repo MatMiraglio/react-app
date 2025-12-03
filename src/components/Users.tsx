@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router';
 
 type userDto = {
     id: number
@@ -26,7 +27,9 @@ function Users() {
         <div>
             <div>
                 <h2>Users</h2>  
-                <button>Create New User</button>
+                <Link to="/create-user">          
+                    <button>Create New User</button>
+                </Link>
             </div>
             <table>
                 <tr>
